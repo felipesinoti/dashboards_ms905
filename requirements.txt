@@ -8,4 +8,4 @@ numpy==1.25.2
 seaborn==0.13.2
 hydralit_components==1.0.10
 scikit-learn>=1.0.2
-sklearn=0.0
+sklearn==0.0
