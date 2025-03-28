@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 import plotly.express as px
@@ -106,17 +106,19 @@ def run_metodos_page():
 
     st.image("images/matriz_corr.png", use_column_width = 'auto')
 
-    fig, ax = plt.subplots(figsize=(8, 6))
-    sns.heatmap(
-        correlation,
-        mask=mask,
-        annot=True,
-        cmap='coolwarm',
-        fmt=".2f",
-        cbar=True,
-        linewidths=0.5,
-        ax=ax
-    )
+    st.image("images/nossa-corr.png", use_column_width = 'auto')
+
+    # fig, ax = plt.subplots(figsize=(8, 6))
+    # sns.heatmap(
+    #     correlation,
+    #     mask=mask,
+    #     annot=True,
+    #     cmap='coolwarm',
+    #     fmt=".2f",
+    #     cbar=True,
+    #     linewidths=0.5,
+    #     ax=ax
+    # )
 
     # Inserir "-" na diagonal e nas dummy exclusivas
     for i in range(len(correlation)):
